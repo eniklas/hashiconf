@@ -4,7 +4,7 @@ provider "dnsimple" {
  domain = "hashi.com"
  type   = "A"
  name   = "test"
- value  = "${aws_instance.web.0.publi_ip}"
+ value  = "${aws_instance.web.0.public_ip}"
 
  #Alternatively:
  #value = "${element(aws_instance.web.*.public_ip, 0)}"
